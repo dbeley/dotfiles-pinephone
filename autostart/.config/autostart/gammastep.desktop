@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=gammastep
+GenericName=Color temperature adjustment
+Comment=Color temperature adjustment tool
+Exec=/usr/bin/gammastep
+Icon=gammastep
+Terminal=false
+Type=Application
+Categories=Utility;
+#NoDisplay=false

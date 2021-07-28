@@ -6,6 +6,9 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias la='ls -la --color=auto'
+alias lah='ls -lah --color=auto'
+alias latr='ls -latrh --color=auto'
 PS1='[\u@\h \W]\$ '
 
 # export LIBVA_DRIVER_NAME=v4l2_request
