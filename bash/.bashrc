@@ -19,3 +19,5 @@ PS1='[\u@\h \W]\$ '
 
 alias vim='nvim'
 export EDITOR=nvim
+
+export NNN_OPTS="cdEx"
