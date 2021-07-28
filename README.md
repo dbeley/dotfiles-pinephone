@@ -16,6 +16,7 @@ See also my other [dotfiles](https://github.com/dbeley/dotfiles) repo for other 
 - gammastep: automatically change color temperature
 - git
 - gtk: dark theme
+- squeekboard: add keyboard layout for us-intl (supress continuous errors in log)
 - tmux
 
 ### Usage
