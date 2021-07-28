@@ -12,7 +12,7 @@ See also my other [dotfiles](https://github.com/dbeley/dotfiles) repo for other 
 ## Folders
 
 - git
-- gtk: dark theme, papirus icon theme
+- gtk: dark theme
 - firefox: some tweaks (`user.js` needs to be copied manually to `~/.mozilla/firefox/*****.default-esr` as the profile name is random)
 
 ### Usage
@@ -57,10 +57,12 @@ I have tried several distros, here are some thoughts:
 	- repos lack `gnome-podcasts`
 	- very stable
 - PostmarketOS
-	- other languages difficult to install (need to install the `*-lang` specific packages)
+	- other languages than english difficult to install (need to install the `*-lang` specific packages)
 	- package manager has very few features
 	- repos lack `gnome-todo`
-- Manjaro ARM (haven't spend much time with it)
+	- seems slower than Mobian
+- Manjaro ARM
 	- nice out-of-the-box theme (thanks to the papirus icon theme)
 	- too much preinstalled apps
 	- no installer so no support for full-disk encryption
+	- seems slower than Mobian
