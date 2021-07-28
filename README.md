@@ -10,3 +10,6 @@ git clone https://github.com/dbeley/dotfiles-pinephone
 cd dotfiles-pinephone
 stow gtk
 ```
+
+- gtk: dark theme, papirus icon theme
+- firefox: some tweaks (`user.js` needs to be copied manually to `~/.mozilla/firefox/*****.default-esr` as the profile name is random)
