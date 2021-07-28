@@ -1,8 +1,0 @@
-fractal
-git
-gnome-passwordsafe
-neofetch
-papirus-icon-theme
-stow
-tmux
-youtube-dl
