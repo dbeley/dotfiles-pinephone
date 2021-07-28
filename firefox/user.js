@@ -49,6 +49,7 @@ user_pref("privacy.firstparty.isolate.restrict_opener_access", true);
 user_pref("privacy.resistFingerprinting", true);
 user_pref("signon.rememberSignons", false);
 user_pref("ui.systemUsesDarkTheme", 1);
-user_pref("layers.acceleration.force-enabled", true)
-user_pref("ui.click_hold_context_menus.delay", 5000)
-user_pref("media.hardwaremediakeys.enabled", true)
+user_pref("layers.acceleration.force-enabled", true);
+user_pref("ui.click_hold_context_menus.delay", 5000);
+user_pref("media.hardwaremediakeys.enabled", true);
+//user_pref("widget.wayland-dmabuf-vaapi.enabled", true);
