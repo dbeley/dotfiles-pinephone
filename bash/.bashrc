@@ -5,7 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+alias l='ls --color=auto'
 alias ls='ls --color=auto'
+alias ll='ls -l --color=auto'
 alias la='ls -la --color=auto'
 alias lah='ls -lah --color=auto'
 alias latr='ls -latrh --color=auto'
@@ -24,3 +26,5 @@ alias vim='nvim'
 export EDITOR=nvim
 
 export NNN_OPTS="cdEx"
+
+alias cpr="rsync -azvhP --stats --inplace"
