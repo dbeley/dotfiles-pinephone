@@ -12,6 +12,7 @@ See also my other [dotfiles](https://github.com/dbeley/dotfiles) repo for other 
 ## Folders
 
 - autostart: autostart gammastep
+- bash
 - firefox: some tweaks (`user.js` needs to be copied manually to `~/.mozilla/firefox/*****.default-esr` as the profile name is random)
 - gammastep: automatically change color temperature
 - git
