@@ -31,3 +31,12 @@ siglo
 stow
 sudo
 tmux
+nextcloud
+qt5-wayland
+grim
+libreoffice-fresh
+libreoffice-fresh-fr
+fd
+ripgrep
+yad
+bat

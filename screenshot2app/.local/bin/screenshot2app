@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# This script make a screen shot
+#
+# Authors: Kyle Rankin & @mo2mo:matrix.org
+# https://puri.sm/posts/easy-librem-5-app-development-take-a-screenshot/
+# https://wiki.mobian-project.org/doku.php?id=tweaks#taking-screenshots-v3
+#
+# dependencies: grim libnotify-bin yad
+#
+# License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law."
+
+
+# make the info
+LNG=$(echo $LANG | cut -d_ -f1)
+case $LNG in
+   fr) INFO="Effectue une capture d'écran après X secondes :\nEmplacement"      ;;
+    *) INFO="Take screenshot after X seconds:\nname (also with path)"
+esac
+
+# start with yad
+INPUT=`yad --title Screenshot --text="$INFO" --form --field=filename:SFL --field=seconds:NUM "Screenshot" "5" --focus-field=1`
+SCREENSHOT=`echo $INPUT | cut -d '|' -f1`
+SECONDS=`echo $INPUT | cut -d '|' -f2`
+[ "$SECONDS" -eq 0 ] && exit 1
+
+FOLDER="SD/Screenshots"
+sleep $SECONDS
+TIMESTAMP=$(date +%Y%m%d-%H%M%S)
+SCREENSHOT="$HOME/$FOLDER/$TIMESTAMP.png"
+grim -t png "$SCREENSHOT"
+case $LNG in
+   fr) info="Capture d'écran enregistrée sous :"         ;;
+    *) info="Screenshot stored at:"
+esac
+notify-send screenshot "$info\n$INFO.$EXT"

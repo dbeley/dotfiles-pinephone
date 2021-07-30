@@ -28,3 +28,11 @@ export EDITOR=nvim
 export NNN_OPTS="cdEx"
 
 alias cpr="rsync -azvhP --stats --inplace"
+
+alias expacsize="expac -H M '%m\t%n'  | sort -h" 
+alias expaclist="expac --timefmt=' %Y-%m-%d %T'  ' %l\t%n'  | sort -h" 
+
+export FZF_DEFAULT_COMMAND="fd --type file --ignore-case --hidden --follow --exclude .git"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --ignore-case --hidden -t d"
+export FZF_TMUX=1

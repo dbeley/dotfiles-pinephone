@@ -17,8 +17,10 @@ See also my other [dotfiles](https://github.com/dbeley/dotfiles) repo for other 
 - gammastep: automatically change color temperature
 - git
 - gtk: dark theme
+- nvim
+- screenshot2app: a very simple screenshot app using `grim`
 - squeekboard: add keyboard layout for us-intl (supress continuous errors in log)
-- tmux
+- tmux: needs [tpm](https://github.com/tmux-plugins/tpm)
 
 ### Usage
 

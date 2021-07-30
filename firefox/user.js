@@ -53,3 +53,4 @@ user_pref("layers.acceleration.force-enabled", true);
 user_pref("ui.click_hold_context_menus.delay", 5000);
 user_pref("media.hardwaremediakeys.enabled", true);
 //user_pref("widget.wayland-dmabuf-vaapi.enabled", true);
+user_pref("fission.autostart" , true);

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Screen Shot
+Name[fr]=Capture d'écran
+Type=Application
+Icon=applets-screenshooter
+Exec=screenshot2app
+Terminal=false
+Keywords=screenshooter;screen;
+Categories=Utility;
