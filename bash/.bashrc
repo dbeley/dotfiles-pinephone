@@ -36,3 +36,5 @@ export FZF_DEFAULT_COMMAND="fd --type file --ignore-case --hidden --follow --exc
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --ignore-case --hidden -t d"
 export FZF_TMUX=1
+
+[ -f /usr/bin/fish ] && exec fish

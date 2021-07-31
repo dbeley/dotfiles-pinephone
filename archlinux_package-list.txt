@@ -40,3 +40,5 @@ fd
 ripgrep
 yad
 bat
+fish
+exa

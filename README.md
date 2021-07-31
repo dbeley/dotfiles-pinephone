@@ -14,10 +14,12 @@ See also my other [dotfiles](https://github.com/dbeley/dotfiles) repo for other 
 - autostart: autostart gammastep
 - bash
 - firefox: some tweaks (`user.js` needs to be copied manually to `~/.mozilla/firefox/*****.default-esr` as the profile name is random)
+- fish
 - gammastep: automatically change color temperature
 - git
 - gtk: dark theme
 - nvim
+- oh-my-fish
 - screenshot2app: a very simple screenshot app using `grim`
 - squeekboard: add keyboard layout for us-intl (supress continuous errors in log)
 - tmux: needs [tpm](https://github.com/tmux-plugins/tpm)
