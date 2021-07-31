@@ -24,6 +24,7 @@ PS1='[\u@\h \W]\$ '
 
 alias vim='nvim'
 export EDITOR=nvim
+export TERM=xterm-256color
 
 export NNN_OPTS="cdEx"
 
@@ -37,6 +38,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --ignore-case --hidden -t d"
 export FZF_TMUX=1
 
-wal -R
+(cat ~/.cache/wal/sequences &)
 
 [ -f /usr/bin/fish ] && exec fish
