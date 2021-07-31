@@ -42,3 +42,4 @@ yad
 bat
 fish
 exa
+python-pywal

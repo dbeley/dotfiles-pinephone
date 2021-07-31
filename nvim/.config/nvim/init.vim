@@ -21,9 +21,9 @@ Plug 'tpope/vim-commentary'
 
 Plug 'junegunn/fzf.vim'
 
-Plug 'morhetz/gruvbox'
-"Plug 'dylanaraps/wal'
-"Plug 'mhinz/vim-startify'
+" Plug 'morhetz/gruvbox'
+Plug 'dylanaraps/wal'
+Plug 'mhinz/vim-startify'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
@@ -58,7 +58,7 @@ set lazyredraw
 
 " Coloration syntaxique
 syntax on
-colorscheme gruvbox
+colorscheme wal
 set background=dark
 " colorscheme wal
 
