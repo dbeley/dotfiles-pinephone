@@ -12,7 +12,6 @@
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law."
 
-
 # make the info
 LNG=$(echo $LANG | cut -d_ -f1)
 case $LNG in
@@ -35,4 +34,4 @@ case $LNG in
    fr) info="Capture d'écran enregistrée sous :"         ;;
     *) info="Screenshot stored at:"
 esac
-notify-send screenshot "$info\n$INFO.$EXT"
+notify-send screenshot "$info\n$SCREENSHOT"

@@ -20,7 +20,8 @@ See also my other [dotfiles](https://github.com/dbeley/dotfiles) repo for other 
 - gtk: dark theme
 - nvim
 - oh-my-fish
-- screenshot2app: a very simple screenshot app using `grim`
+- qutebrowser: `mkdir -p ~/.local/share/qutebrowser; mkdir -p ~/.config/qutebrowser`
+- screenshot2app: a very simple screenshot app using `grim` (`sudo stow -t /usr/local screenshot2app`)
 - squeekboard: add keyboard layout for us-intl (supress continuous errors in log)
 - tmux: needs [tpm](https://github.com/tmux-plugins/tpm)
 

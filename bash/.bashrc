@@ -38,6 +38,11 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --ignore-case --hidden -t d"
 export FZF_TMUX=1
 
+export QT_QPA_PLATFORM=wayland
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+export SDL_VIDEODRIVER=wayland
+export MOZ_ENABLE_WAYLAND=1
+
 (cat ~/.cache/wal/sequences &)
 
 [ -f /usr/bin/fish ] && exec fish

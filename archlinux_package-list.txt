@@ -43,3 +43,6 @@ bat
 fish
 exa
 python-pywal
+youtube-dl
+mpv
+qutebrowser
