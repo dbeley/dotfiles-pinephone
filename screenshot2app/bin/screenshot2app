@@ -20,8 +20,7 @@ case $LNG in
 esac
 
 # start with yad
-INPUT=`yad --title Screenshot --text="$INFO" --form --field=filename:SFL --field=seconds:NUM "Screenshot" "5" --focus-field=1`
-SCREENSHOT=`echo $INPUT | cut -d '|' -f1`
+INPUT=`yad --title Screenshot --text="$INFO" --form --field=seconds:NUM "5" --focus-field=1`
 SECONDS=`echo $INPUT | cut -d '|' -f2`
 [ "$SECONDS" -eq 0 ] && exit 1
 

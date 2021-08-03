@@ -46,3 +46,4 @@ python-pywal
 youtube-dl
 mpv
 qutebrowser
+gnome-calendar
