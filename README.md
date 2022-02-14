@@ -8,7 +8,6 @@ I use `stow` to automatically create symbolic links.
 
 See also my other [dotfiles](https://github.com/dbeley/dotfiles) repo for other ideas.
 
-
 ## Folders
 
 - autostart: autostart gammastep
@@ -44,20 +43,32 @@ stow gtk # will create symbolic links in your home directory
 ### Usage
 
 ```
-cd ~
-sudo apt install git stow
-git clone https://github.com/dbeley/dotfiles-pinephone
-cd dotfiles-pinephone
 chmod +x *.sh
 ./mobian-theme.sh
 ```
 
+## Cheatsheet
+
+###  Jumpdrive
+
+- https://github.com/dreemurrs-embedded/Jumpdrive
+- https://wiki.pine64.org/index.php/PinePhone_Installation_Instructions
+
+```
+sudo dd if=pine64-pinephone.img of=/dev/[DEVICE] bs=1M status=progress conv=fsync
+```
+
+### Archlinux FDE
+
+- https://github.com/dreemurrs-embedded/archarm-mobile-fde-installer
+- dependencies on archlinux desktop: wget, squashfs-tools, f2fs-tools
 
 ## Distros
 
 I have tried several distros, here are some thoughts:
 
-- Archlinux ARM
+- Archlinux ARM (https://github.com/dreemurrs-embedded/Pine64-Arch)
+    - installer allows for full-disk encryption
 	- lots of config to do by hand (hence the scripts)
 	- repos have almost everything
 	- docking mode needs a reboot from time to time
@@ -70,9 +81,9 @@ I have tried several distros, here are some thoughts:
 	- other languages than english difficult to install (need to install the `*-lang` specific packages)
 	- package manager has very few features
 	- repos lack `gnome-todo`
-	- seems slower than Mobian
+	- slower than Mobian
 - Manjaro ARM
 	- nice out-of-the-box theme (thanks to the papirus icon theme)
 	- too much preinstalled apps
 	- no installer so no support for full-disk encryption
-	- seems slower than Mobian
+	- slower than Mobian
