@@ -15,6 +15,11 @@ alias l "exa"
 alias ll "exa -lh"
 alias la "exa -lah"
 
+alias gd "git diff"
+alias gs "git status"
+
+alias bal "ledger -f ledger.ledger balance --depth 1"
+
 alias cpr "rsync -azvhP --stats --inplace --zc=zstd --zl=3"
 
 alias expacsize "expac -H M '%m\t%n' | sort -h"
