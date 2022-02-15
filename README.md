@@ -65,7 +65,7 @@ wal -i Pictures/wallpaper.jpg
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 ```
 
-- firefox: run one time, then copy `user.js` to `~/.mozilla/firefox/*****.default-release` folder 
+- firefox: run one time, then copy `user.js` to `~/.mozilla/firefox/*****.default-release` folder
 
 ### Flatpak
 
@@ -76,10 +76,18 @@ sudo pacman -S flatpak
 flatpak install flathub org.nanuc.Axolotl
 ```
 
-## Apps
+#### Apps
 
 - org.nanuc.Axolotl
 - dev.alextren.Spot
 - org.gabmus.giara
 - io.gitlab.caveman250.headlines
 - de.schmidhuberj.tubefeeder
+
+### Waydroid
+
+```
+sudo pacman -S waydroid-image
+sudo waydroid init -f
+sudo systemctl enable --now waydroid-container
+```

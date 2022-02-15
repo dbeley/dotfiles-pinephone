@@ -24,3 +24,4 @@ ripgrep
 stow
 tmux
 yt-dlp
+waydroid-image
