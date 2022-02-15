@@ -3,21 +3,6 @@
 - autostart: autostart gammastep
 - gammastep: automatically change color temperature (features is now native in phosh)
 
-## Scripts
-
-Most of those are not needed anymore on phosh
-
-- `mobian_reset-control-center.sh`: the gnome settings might crash if you open empty sections, this script resets the last seen panel of the gnome control center.
-- `mobian_settings.sh`: some settings I use
-- `mobian_theme.sh`: set the gtk theme to `Adwaita-dark` and the icon theme to `Papirus-Dark` (the papirus icon pack is generally not installed by default on most distros)
-
-### Usage
-
-```
-chmod +x *.sh
-./mobian-theme.sh
-```
-
 ## Distros
 
 I have tried several distros, here are some thoughts:
