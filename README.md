@@ -38,6 +38,7 @@ stow gtk # will create symbolic links in your home directory
 - `mobian_reset-control-center.sh`: the gnome settings might crash if you open empty sections, this script resets the last seen panel of the gnome control center.
 - `mobian_settings.sh`: some settings I use
 - `mobian_theme.sh`: set the gtk theme to `Adwaita-dark` and the icon theme to `Papirus-Dark` (the papirus icon pack is generally not installed by default on most distros)
+- `waydroid-delete-apps-from-drawer.sh`: delete all waydroid apps (except waydroid itself) from phosh drawer
 
 ## Cheatsheet
 
@@ -83,6 +84,7 @@ flatpak install flathub org.nanuc.Axolotl
 - org.gabmus.giara
 - io.gitlab.caveman250.headlines
 - de.schmidhuberj.tubefeeder
+- io.freetubeapp.FreeTube
 
 ### Waydroid
 
@@ -91,3 +93,11 @@ sudo pacman -S waydroid-image
 sudo waydroid init -f
 sudo systemctl enable --now waydroid-container
 ```
+
+### Others
+
+French ISP orange doesn't work well out-of-the-box. Adding an "APN" with the following settings fix mobile data:
+- Name: orange world
+- APN: orange
+- user: orange
+- password: orange

@@ -21,7 +21,10 @@ papirus-icon-theme
 python-neovim
 python-pywal
 ripgrep
+siglo
 stow
 tmux
-yt-dlp
 waydroid-image
+wireguard-tools
+yad
+yt-dlp
