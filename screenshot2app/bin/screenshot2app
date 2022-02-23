@@ -20,14 +20,16 @@ case $LNG in
 esac
 
 # start with yad
-INPUT=`yad --title Screenshot --text="$INFO" --form --field=seconds:NUM "5" --focus-field=1`
+INPUT=`yad --title Screenshot --text="$INFO" --form --field=folder:SFL --field=seconds:NUM "~/Pictures/" "5" --focus-field=2`
+FOLDER=`echo $INPUT | cut -d '|' -f1`
 SECONDS=`echo $INPUT | cut -d '|' -f2`
 [ "$SECONDS" -eq 0 ] && exit 1
 
-FOLDER="SD/Screenshots"
+[ ! -d "$FOLDER" ] && mkdir "$FOLDER"
+
 sleep $SECONDS
 TIMESTAMP=$(date +%Y%m%d-%H%M%S)
-SCREENSHOT="$HOME/$FOLDER/$TIMESTAMP.png"
+SCREENSHOT="$FOLDER/$TIMESTAMP.png"
 grim -t png "$SCREENSHOT"
 case $LNG in
    fr) info="Capture d'écran enregistrée sous :"         ;;
