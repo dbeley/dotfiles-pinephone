@@ -1,0 +1,10 @@
+com.github.neithern.g4music
+io.gitlab.azymohliad.WatchMate
+org.nanuc.Axolotl
+de.schmidhuberj.Flare
+com.belmoussaoui.Authenticator
+com.github.geigi.cozy
+org.gabmus.giara
+io.gitlab.caveman250.headlines
+de.schmidhuberj.tubefeeder
+io.freetubeapp.FreeTube

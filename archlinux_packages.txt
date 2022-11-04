@@ -28,3 +28,6 @@ waydroid-image
 wireguard-tools
 yad
 yt-dlp
+gnome-notes
+gnome-podcasts
+gnome-firmware
