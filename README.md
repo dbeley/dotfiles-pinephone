@@ -1,14 +1,14 @@
-# dotfiles-pinephone
+# dotfiles-linux-mobile
 
-My linux config files for my [pinephone](https://www.pine64.org/pinephone/).
+My linux config files for my [pinephone](https://www.pine64.org/pinephone/) (running Arch Linux ARM) and my OnePlus 6 (running PostMarketOS) both under the phosh desktop environment.
 
-I currently use Arch Linux ARM with the phosh desktop environment (installed with full-disk encryption thanks to [this script](https://github.com/dreemurrs-embedded/archarm-mobile-fde-installer)).
+To install Arch Linux ARM I'm using [this script](https://github.com/dreemurrs-embedded/archarm-mobile-fde-installer)).
 
 I use `stow` to automatically create symbolic links.
 
 See also my other [dotfiles](https://github.com/dbeley/dotfiles) repo for other ideas.
 
-## OS Install
+## Pinephone OS Install
 
 ###  Jumpdrive
 
@@ -44,7 +44,7 @@ chmod +x *.sh
 ./mobian_theme.sh
 ```
 
-### Post-install
+## Post-install
 
 ```
 wal -i Pictures/wallpaper.jpg
@@ -78,17 +78,48 @@ wal -i Pictures/wallpaper.jpg
 
 A lot of linux mobile apps use flatpak as a mean of installation. See `flatpak_packages.txt`.
 
+#### ArchLinux
+
 ```
 sudo pacman -S flatpak
 flatpak install flathub org.nanuc.Axolotl
 ```
 
+#### PostMarketOS
+
+```
+sudo apk add flatpak
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+
 ### Waydroid
+
+#### ArchLinux
 
 ```
 sudo pacman -S waydroid-image
 sudo waydroid init -f
 sudo systemctl enable --now waydroid-container
+```
+
+#### PostMarketOS
+
+```
+pmbootstrap kconfig edit linux-postmarketos-qcom-sdm845
+# General setup ─> Control Group Support ─> CPU controller ─> Group scheduling for SCHED_RR/FIFO
+pmbootstrap build --force linux-postmarketos-qcom-sdm845
+pmbootstrap flasher flash_kernel
+
+sudo apk add waydroid
+sudo rc-update add cgroups default # optional
+sudo rc-service cgroups start
+sudo apk add iptables dnsmasq
+
+sudo waydroid init
+
+sudo rc-service waydroid-container start
+sudo rc-update add waydroid-container default # optional
+waydroid status
 ```
 
 ### Others

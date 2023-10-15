@@ -1,0 +1,12 @@
+gnome-passwordsafe
+gnome-passwordsafe-lang
+libreoffice
+libreoffice-lang-fr
+papirus-icon-theme
+waydroid
+wireguard-tools
+yad
+gnome-podcasts
+gnome-podcasts-lang
+gnome-firmware
+gnome-firmware-lang
