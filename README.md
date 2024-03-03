@@ -1,6 +1,6 @@
 # dotfiles-linux-mobile
 
-My linux config files for my [pinephone](https://www.pine64.org/pinephone/) (running Arch Linux ARM) and my OnePlus 6 (running PostMarketOS) both under the phosh desktop environment.
+My linux config files for my [Pinephone](https://www.pine64.org/pinephone/) (running Arch Linux ARM) and my OnePlus 6 (running PostMarketOS) both under the phosh desktop environment.
 
 To install Arch Linux ARM I'm using [this script](https://github.com/dreemurrs-embedded/archarm-mobile-fde-installer)).
 
@@ -54,7 +54,7 @@ wal -i Pictures/wallpaper.jpg
 
 ## Folders
 
-- archives: config files and scripts not used anymore
+- archives: some config files and scripts I don't use anymore
 - bash
 - firefox: some tweaks (`user.js` needs to be copied manually to `~/.mozilla/firefox/*****.default-esr` as the profile name is random)
 - fish
@@ -124,7 +124,7 @@ waydroid status
 
 ### Others
 
-French ISP orange doesn't work well out-of-the-box. Adding an "APN" with the following settings fix mobile data:
+French ISP orange doesn't work well out-of-the-box. Adding an "APN" with the following settings fixes mobile data:
 - Name: orange world
 - APN: orange
 - user: orange
